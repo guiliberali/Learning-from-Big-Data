@@ -42,7 +42,7 @@ In general, use textbooks or online resources to fill gaps in your skills whenev
 
 ## Tutorials
 
-Bob Rombach will be holding R tutorials as follows:
+Bob Rombach, PhD student of my research group at RSM will be holding R tutorials as follows:
 * Tutorial 0: Introduction to R and R Markdown
 * Tutorial 1.1: R on supervised learning examples
 * Tutorial 1.2: R on unsupervised learning examples
@@ -64,7 +64,7 @@ THEORY
 * Lecture 01-1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] ).   
 
 * Lecture 01-2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
-Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Big-Data-2025 )  
+Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Learning-from-Big-Data )  
 
 * Lecture 01-3: Unsupervised Models and NLP. [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
@@ -72,21 +72,21 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 
 CODE
 
-* Lecture 1.1: [R](https://github.com/guiliberali/Big-Data-2025/tree/main/code/Lecture_1.1%20-%20ML%20intro ) 
+* Lecture 1.1: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro ) 
   
 
-* Lecture 1.2: [R](https://github.com/guiliberali/Big-Data-2025 ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Big-Data-2025 )  
+* Lecture 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Learning-from-Big-Data )  
  
 
-* Lecture 1.3: [R](https://github.com/guiliberali/Big-Data-2025) 
+* Lecture 1.3: [R](https://github.com/guiliberali/Learning-from-Big-Data) 
  
 
 
 ASSIGNMENT MODULE 1 (coming soon)
 
-* [1. first steps](https://github.com/guiliberali/Big-Data-2025)
-* [2. full details](https://github.com/guiliberali/Big-Data-2025) 
-* [3. template](https://github.com/guiliberali/Big-Data-2025)
+* [1. first steps](https://github.com/guiliberali/Learning-from-Big-Data)
+* [2. full details](https://github.com/guiliberali/Learning-from-Big-Data) 
+* [3. template](https://github.com/guiliberali/Learning-from-Big-Data)
 
 * Rubric - please download it from Canvas. 
  
