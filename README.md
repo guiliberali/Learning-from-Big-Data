@@ -23,7 +23,7 @@ Public Github repo for the 2025 minor Learning from Big Data
 ├── preparation          # a survival guide to get you familiar with R
 ├── code                 # R notebooks with the code used in our lectures. THis is NOT the tutorial sessions 
 ├── tutorials            # R notebooks used in the tutorial sessions 
-├── assignments         # details and template for all assignment of the course
+├── assignments          # details and template for all assignment of the course
 ├── output               # folder used to store the output files generated in this repo  
 └── data                 # all data files used in module 1, including data for the assignment, lectures, and tutorials
 
@@ -42,7 +42,7 @@ In general, use textbooks or online resources to fill gaps in your skills whenev
 
 ## Tutorials
 
-Tayyip Altan, our TA (tayyip-altan@hotmail.com) will be holding R tutorials as follows:
+Bob Rombach will be holding R tutorials as follows:
 * Tutorial 0: Introduction to R and R Markdown
 * Tutorial 1.1: R on supervised learning examples
 * Tutorial 1.2: R on unsupervised learning examples
