@@ -1,6 +1,6 @@
 # Erasmus University  - Rotterdam School of Management
-# Learning from Big Data 2025
-Public Github repo for the 2025 minor Learning from Big Data
+# Learning from Big Data 2026
+Public Github repo for the 2026 minor Learning from Big Data
 
 ---
 ## Prof. Gui Liberali
@@ -42,7 +42,6 @@ In general, use textbooks or online resources to fill gaps in your skills whenev
 
 ## Tutorials
 
-Bob Rombach, PhD student of my research group at RSM will be holding R tutorials as follows:
 * Tutorial 0: Introduction to R and R Markdown
 * Tutorial 1.1: R on supervised learning examples
 * Tutorial 1.2: R on unsupervised learning examples
@@ -79,15 +78,5 @@ CODE
  
 
 * Lecture 1.3: [R](https://github.com/guiliberali/Learning-from-Big-Data) 
- 
-
-
-ASSIGNMENT MODULE 1 (coming soon)
-
-* [1. first steps](https://github.com/guiliberali/Learning-from-Big-Data)
-* [2. full details](https://github.com/guiliberali/Learning-from-Big-Data) 
-* [3. template](https://github.com/guiliberali/Learning-from-Big-Data)
-
-* Rubric - please download it from Canvas. 
  
 
