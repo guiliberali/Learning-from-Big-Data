@@ -62,7 +62,6 @@ THEORY
 * Lecture 1.1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] ).   
 
 * Lecture 1.2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
-Advanced reading: On the optimality of naive Bayes - optional [here](https://github.com/guiliberali/Learning-from-Big-Data )  
 
 * Lecture 1.3: Unsupervised Models and NLP. [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
@@ -73,7 +72,7 @@ CODE
 * Lecture 1.1: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro ) 
   
 
-* Lecture 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data ) and  [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Learning-from-Big-Data )  
+* Lecture 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data )  
  
 
 * Lecture 1.3: [R](https://github.com/guiliberali/Learning-from-Big-Data) 
