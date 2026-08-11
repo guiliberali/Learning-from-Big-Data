@@ -69,12 +69,8 @@ THEORY
 
 CODE
 
-* Lecture 1.1: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro%20) 
+* Lectures 1.1 and 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro%20) 
   
-
-* Lecture 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data )  
  
-
-* Lecture 1.3: [R](https://github.com/guiliberali/Learning-from-Big-Data) 
  
 
