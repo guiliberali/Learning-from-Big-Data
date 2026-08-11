@@ -59,7 +59,7 @@ Here are links to theory and practice (data/code) when applicable. You may need 
 
 THEORY
 
-* Lecture 1.1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] ).   
+* Lecture 1.1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case](https://canvas.eur.nl/courses/57509/modules/items/1649841).   
 
 * Lecture 1.2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
 
@@ -69,12 +69,8 @@ THEORY
 
 CODE
 
-* Lecture 1.1: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro ) 
+* Lectures 1.1 and 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data/tree/main/code/Lecture_1.1%20-%20ML%20intro%20) 
   
-
-* Lecture 1.2: [R](https://github.com/guiliberali/Learning-from-Big-Data )  
  
-
-* Lecture 1.3: [R](https://github.com/guiliberali/Learning-from-Big-Data) 
  
 
