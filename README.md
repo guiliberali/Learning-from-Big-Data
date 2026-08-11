@@ -59,7 +59,7 @@ Here are links to theory and practice (data/code) when applicable. You may need 
 
 THEORY
 
-* Lecture 1.1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] ).   
+* Lecture 1.1: Introduction. [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case(via Canvas)] (https://canvas.eur.nl/courses/57509/modules/items/1649841 ).   
 
 * Lecture 1.2: Supervised Models and NLP. [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).
 
