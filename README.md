@@ -21,10 +21,10 @@ Public Github repo for the 2026 minor Learning from Big Data
 .
 ├── README.md            # this readme file
 ├── code                 # R notebooks with the code used in our lectures. THis is NOT the tutorial sessions 
-└── data                 # all data files used in module 1, including data for the assignment, lectures, and tutorials
+├── data                 # all data files used in module 1, including data for the assignment, lectures, and tutorials
 ├── tutorials            # R notebooks used in the tutorial sessions 
 ├── assignments          # details and template for all assignment of the course
-├── your presentations   # Folder to put your presentation files you will use during your in-class presentations
+└── your presentations   # Folder to put your presentation files you will use during your in-class presentations
 
 ```
 
