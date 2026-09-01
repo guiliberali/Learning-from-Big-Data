@@ -41,7 +41,7 @@ In general, use textbooks or online resources to fill gaps in your skills whenev
 
 ## Tutorials
 
-* Tutorial 0: Introduction to R and R Markdown
+* Tutorial 0: Introduction to R and LaTeX
 * Tutorial 1.1: R on supervised learning examples
 * Tutorial 1.2: R on unsupervised learning examples
 * Tutorial 1.3: R Q&A given module report
