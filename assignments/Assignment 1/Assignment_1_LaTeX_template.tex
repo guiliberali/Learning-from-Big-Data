@@ -55,8 +55,8 @@ This report has the following structure:
   \item \textbf{Data aggregation and formatting}
   \item \textbf{Supervised Learning -- The Naive Bayes classifier (NBC)}
   \item \textbf{Supervised Learning -- Inspect the NBC performance}
-  \item \textbf{Unsupervised Learning -- Predict Box office using LDA}
-  \item \textbf{Unsupervised Learning -- Predict Box office using Word2Vec}
+  \item \textbf{Unsupervised Learning -- Predict using LDA}
+  \item \textbf{Unsupervised Learning -- Predict using Word2Vec}
   \item \textbf{Analysis -- answering the research question}
   \item \textbf{OPTIONAL -- run and interpret the AFINN lexicon for sentiment}
   \item \textbf{Appendix}
@@ -165,9 +165,9 @@ precision and accuracy scores. Do not forget to interpret your findings.}
 \end{table}
 
 % ============================================================================
-\section{Unsupervised Learning: Predict box office using LDA}
+\section{Unsupervised Learning: Predict using LDA}
 % ============================================================================
-\question{VI}{Using LDA, predict movie box office. Tip: you can pass a list of
+\question{VI}{Using LDA, predict a variable in your dataset (in the case of movie reviews, use movie box office). Tip: you can pass a list of
 reviews to the LDA package in order to get the posterior probability that the
 reviews are about each topic. If you pass them all in a single document, you will
 not get review-specific vectors.}
@@ -176,9 +176,9 @@ not get review-specific vectors.}
 
 
 % ============================================================================
-\section{Unsupervised Learning: Predict box office using Word2Vec}
+\section{Unsupervised Learning: Predict using Word2Vec}
 % ============================================================================
-\question{VII}{Using Word2Vec, predict movie box office.\\
+\question{VII}{Using Word2Vec, predict a variable in your dataset (in the case of movie reviews, use movie box office).\\
 Tip 1: you can reduce the dimensionality of the Word2Vec output with PCA/Factor
 analysis. This will save you computing time.\\
 Tip 2: Word2Vec gives you word vectors. You can then compute the average of these

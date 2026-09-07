@@ -35,8 +35,8 @@
 #   3. Data aggregation and formatting
 #   4. Supervised Learning - The Naive Bayes classifier (NBC)
 #   5. Supervised Learning - Inspect the NBC performance
-#   6. Unsupervised Learning - Predict Box office using LDA
-#   7. Unsupervised Learning - Predict Box office using Word2Vec
+#   6. Unsupervised Learning - Predict Box using LDA
+#   7. Unsupervised Learning - Predict Box using Word2Vec
 #   8. Analysis - answering the research question
 #   9. OPTIONAL - run and interpret the AFINN lexicon for sentiment
 #   10. Appendix
@@ -420,7 +420,7 @@ ground_truth_judges <- read.csv(JUDGES_FILE)
 #===============================================================================
 # 6. Unsupervised Learning: Predict box office using LDA
 #-------------------------------------------------------------------------------
-# QUESTION VI. Using LDA, predict movie box office. Tip: You can pass a list
+# QUESTION VI. Using LDA, predict a variable in your dataset (in the case of movie reviews, use movie box office). Tip: You can pass a list
 # of reviews to the LDA package, in order to get the posterior probability
 # the reviews are about each topic. If you pass them all in a single
 # document, you will not get review-specific vectors.
@@ -431,7 +431,7 @@ ground_truth_judges <- read.csv(JUDGES_FILE)
 #===============================================================================
 # 7. Unsupervised Learning: Predict box office using Word embeddings given by Word2Vec
 #-------------------------------------------------------------------------------
-# QUESTION VII. Using Word2Vec, predict movie box office.
+# QUESTION VII. Using Word2Vec,predict a variable in your dataset (in the case of movie reviews, use movie box office).
 # Tip 1. You can reduce the dimensionality of the output of word2vec with
 #        PCA/Factor analysis. This will save you computing time.
 # Tip 2. Word2Vec will give you word vectors. You can then compute the
