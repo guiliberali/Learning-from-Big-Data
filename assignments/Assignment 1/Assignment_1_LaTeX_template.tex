@@ -1,0 +1,240 @@
+% ============================================================================
+% Learning from Big Data - Assignment 1
+% LaTeX report template
+% ============================================================================
+
+\documentclass[11pt]{article}
+
+% ---- Packages (from the Rmd header-includes, plus what a LaTeX report needs) ----
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{float}
+\usepackage{booktabs}          % to thicken table lines
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+% ---- Helper commands for the template scaffolding ----
+% A prompt box reproducing a "QUESTION" from the Rmd
+\newcommand{\question}[2]{%
+  \par\medskip
+  \noindent\textbf{QUESTION #1.} #2\par\medskip
+}
+% A placeholder the student must replace with their own answer
+\newcommand{\answer}[1]{%
+  \textcolor{blue}{\emph{[YOUR ANSWER HERE: #1]}}
+}
+
+\title{Learning from Big Data: Assignment 1\\ Prof. Gui Liberali}
+\author{Group number: \dotfill}
+
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+This file provides a LaTeX template for Assignment 1 of the Learning from Big Data
+course. It was prepared to save you time
+so that you can focus on the theory and technical parts of the methods seen in class.
+
+You have received the dataset of reviews, the three dictionaries with the training set
+of words for each topic, a list of stopwords, and a validation dataset containing
+sentences classified by a panel of human judges. Run your analysis in R to produce your predictions, likelihoods, tables, and figures, then report and interpret them here. This template does not reproduce any R code -- it is
+where you write up and discuss the results of the analysis you ran separately.
+
+Sections marked \textbf{QUESTION} are the parts you are asked to answer. Text shown as
+\answer{...} marks where you should insert your own writing, tables, or figures.
+
+This report has the following structure:
+\begin{enumerate}
+  \item \textbf{General Guidelines}
+  \item \textbf{Research Question}
+  \item \textbf{Data aggregation and formatting}
+  \item \textbf{Supervised Learning -- The Naive Bayes classifier (NBC)}
+  \item \textbf{Supervised Learning -- Inspect the NBC performance}
+  \item \textbf{Unsupervised Learning -- Predict Box office using LDA}
+  \item \textbf{Unsupervised Learning -- Predict Box office using Word2Vec}
+  \item \textbf{Analysis -- answering the research question}
+  \item \textbf{OPTIONAL -- run and interpret the AFINN lexicon for sentiment}
+  \item \textbf{Appendix}
+\end{enumerate}
+
+\textcolor{red}{Before going further:} make sure you have run your analysis in R
+(Tutorial 0 provides installation instructions) and have the outputs (predictions,
+likelihoods, tables, figures) ready to paste into this report.
+
+% ============================================================================
+\section{General Guidelines}
+% ============================================================================
+Page length. The template has 4 pages. You are allowed to add 7 to 10 pages, not
+including the appendix. There is a limit of pages, but you have the possibility of
+using appendices, which are not limited in number of pages. Use your pages wisely.
+For example, having a table with 2 rows and 3 columns that uses 50\% (or even 25\%)
+of a page is not an efficient use of space.
+
+% ============================================================================
+\section{Submission}
+% ============================================================================
+Make sure that the files you submit on canvas contain the following:
+\begin{enumerate}
+    \item The pdf of your report named \textbf{Assignment\_1\_GROUPNUMBER.pdf}
+    \item Your code, that can be run as-is, which prints all tables/figures you use in your pdf report.
+    \item If you use any data not on the github, upload it as well.
+    \item The $Reviews\_Raw$ file containing the calculated posterior content and sentiment likelihoods. 
+\end{enumerate}
+
+
+
+% ============================================================================
+\section{Research Question}
+% ============================================================================
+\question{I}{Present here the main research question you are going to answer with
+your text analysis. You are free to choose the problem and change it until the last
+minute before handing in your report. However, your question should not be so simple
+that it does not require text analysis. For example, if your question can be answered
+by reading two reviews, you do not need text analysis; all you need is 10 seconds to
+read two reviews. Your question should not be so difficult that you cannot answer in
+your report. Your question needs to be answered in these pages.}
+
+\answer{}
+
+% ============================================================================
+\section{Data aggregation and formatting}
+% ============================================================================
+\question{II}{Decide on how to aggregate or structure your data. The data you
+received is at the review level (i.e., each row is a review). However, the variables
+in the data are very rich and allow you to use your creativity when designing your
+research question. For example, there are timestamps, which allow you to aggregate
+the data at the daily level or even hourly level. There is information on reviewers,
+which allows you to inspect patterns of rating by reviewer. There is information on
+studios, and more. Please explicitly indicate how you structured your dataset, and
+what your motivation is for doing so. Even if you are using the data at the review
+level, indicate how and why that is needed for your research question.}
+
+\answer{}
+
+% ============================================================================
+\section{Supervised learning -- the Naive Bayes classifier}
+% ============================================================================
+
+\subsection{Likelihoods}
+\question{III}{Create the content likelihoods based on the three lists of words
+provided (storyline, acting, visual). Be explicit on the decisions you took in the
+process, and why you made those decisions (e.g., which smoothing approach you used).}
+
+\answer{}
+
+\question{IV}{Locate a list of sentiment words that fits your research question. For
+example, you may want to look just at positive and negative sentiment (hence two
+dimensions), or you may want to look at other sentiment dimensions, such as specific
+emotions (excitement, fear, etc.). TIP: Google will go a long way finding these, but
+do check if there is a paper you can cite that uses your list.}
+
+\answer{}
+
+
+% ============================================================================
+\section{Supervised Learning -- Inspect the NBC performance}
+% ============================================================================
+\subsection{Compute confusion matrix, precision and recall}
+\question{V}{Compare the performance of your NBC implementation (for content)
+against the judges' ground truth by building the confusion matrix and computing the
+precision and accuracy scores. Do not forget to interpret your findings.}
+
+\answer{}
+
+\begin{table}[H]
+  \centering
+  \caption{Confusion matrix -- content classifier vs.\ judges' ground truth (example layout).}
+  \label{tab:confusion-matrix}
+  \footnotesize
+  \begin{tabular}{llccc}
+    \toprule
+    & & \multicolumn{3}{c}{Predicted} \\
+    \cmidrule(lr){3-5}
+    & & Storyline & Acting & Sound/Visual \\
+    \midrule
+    \multirow{3}{*}{Actual} & Storyline     & \answer{} & \answer{} & \answer{} \\
+                            & Acting        & \answer{} & \answer{} & \answer{} \\
+                            & Sound/Visual  & \answer{} & \answer{} & \answer{} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ============================================================================
+\section{Unsupervised Learning: Predict box office using LDA}
+% ============================================================================
+\question{VI}{Using LDA, predict movie box office. Tip: you can pass a list of
+reviews to the LDA package in order to get the posterior probability that the
+reviews are about each topic. If you pass them all in a single document, you will
+not get review-specific vectors.}
+
+\answer{}
+
+
+% ============================================================================
+\section{Unsupervised Learning: Predict box office using Word2Vec}
+% ============================================================================
+\question{VII}{Using Word2Vec, predict movie box office.\\
+Tip 1: you can reduce the dimensionality of the Word2Vec output with PCA/Factor
+analysis. This will save you computing time.\\
+Tip 2: Word2Vec gives you word vectors. You can then compute the average of these
+word vectors for all words in a review. This gives you a vector describing the
+content of a review, which you can use as your constructed variable(s).}
+
+\answer{}
+
+
+% ============================================================================
+\section{Analysis -- Use the constructed variables to answer your research question}
+% ============================================================================
+\question{VIII}{Now that you have constructed your NLP variables for sentiment and
+content using supervised and unsupervised methods, use them to answer your original
+research question.}
+
+\answer{}
+
+% ============================================================================
+\section{OPTIONAL: run and interpret sentiment with the supervised learning AFINN lexicon}
+% ============================================================================
+\question{IX (optional)}{Using the AFINN code you received in the lecture, compute
+the sentiment using the syuzhet package/lexicon. Compare the performance of your NBC
+implementation (for sentiment) assuming that the AFINN classification is the ground
+truth, then build the confusion matrix and compute precision and recall. Note that we
+are now interested in understanding how much the two classifications differ and how,
+but we are not implying that AFINN is error-free, far from it. We are interested in
+uncovering sources of systematic differences that can be attributed to the algorithms
+or lexicons. Do interpret your findings.}
+
+\answer{}
+
+\begin{table}[H]
+  \centering
+  \caption{Confusion matrix -- NBC sentiment vs.\ AFINN (example layout).}
+  \label{tab:AFINN-confusion}
+  \begin{tabular}{llcc}
+    \toprule
+    & & \multicolumn{2}{c}{Predicted (NBC)} \\
+    \cmidrule(lr){3-4}
+    & & Positive & Negative \\
+    \midrule
+    \multirow{2}{*}{AFINN} & Positive & \answer{} & \answer{} \\
+                           & Negative & \answer{} & \answer{} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ============================================================================
+\appendix
+\section{Appendix}
+% ============================================================================
+Use this section (unlimited pages) for supplementary material: extra tables/figures,
+robustness checks, additional prediction samples, or a link to your GitHub
+repository in lieu of uploading your code separately.
+
+\answer{}
+
+\end{document}
