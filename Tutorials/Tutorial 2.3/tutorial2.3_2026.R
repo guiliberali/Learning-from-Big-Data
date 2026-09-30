@@ -167,21 +167,21 @@ sim_ucb <- function(df, n_before_sim, n_sim, c, interval=1){
     # select from the data for experiment the arm chosen
     df_during_policy_arm <- df_during_policy %>% 
       filter(arm==chosen_arm)
+
+    # warn the user to increase the dataset or downsize the experiment,
+    # in the case that we have sampled all observations from an arm
+    if(nrow(df_during_policy_arm) == 0){
+      print("You have run out of observations from a chosen arm")
+      break
+    }
     
     # randomly sample from this arm and observe the reward
     sampled_arm <- sample(1:nrow(df_during_policy_arm), 1)
     reward <- df_during_policy_arm$reward[sampled_arm]
     
-    # important: remove the reward from the dataset to prevent repeated sampling
+    # important: remove the sampled observation from the dataset to prevent repeated sampling
     index_result <- df_during_policy_arm$index[sampled_arm]
-    df_during_policy_arm <- df_during_policy_arm %>% filter(index != index_result)
-
-    # warn the user to increase dataset or downside the size of experiment, 
-    # in the case that have sampled all observations from an arm
-    if(length(reward) == 0){
-      print("You have run out of observations from a chosen arm")
-      break
-    }
+    df_during_policy <- df_during_policy %>% filter(index != index_result)
     
     # get a vector of results from chosen arm (arm, reward)
     result_policy_i <- c(chosen_arm, reward)
